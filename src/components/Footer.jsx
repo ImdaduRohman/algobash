@@ -16,27 +16,27 @@ export default function Footer() {
   return (
     <div className="bg-[#07477A] p-10 flex flex-col md:flex-row justify-around items-start md:items-center gap-8">
       <img src="/footer-logo.svg" alt="logo" />
-      <div>
+      <div className="bg-white p-6">
         <div>
           <select 
             name="departement" 
             id="departement" 
             value={departement}
             onChange={(e) => setDepartement(e.target.value)}
-            className="p-2 text-sm font-bold text-[#00537C] mb-4">
+            className="p-2 text-sm font-bold text-[#00537C] mb-4 ring-1 ring-[#C4C4C4] rounded">
             <option value="TECHNOLOGY DEPARTMENT">TECHNOLOGY DEPARTMENT</option>
             <option value="BUSINESS DEPARTMENT">BUSINESS DEPARTMENT</option>
           </select>
           {addressDept.filter((item) => item.dep === departement).map((item, index) => (
-            <div key={index}>{item.address}</div>
+            <div key={index} className="text-[#25A0D8]">{item.address}</div>
           ))}
         </div>
       </div>
       <div className="text-white text-base leading-[30px]">
         <ul>
-          <li>Who We Are</li>
-          <li>Our Values</li>
-          <li>The Perks</li>
+          <li><a href="#wwa">Who We Are</a></li>
+          <li><a href="#ourValues">Our Values</a></li>
+          <li><a href="#perks">The Perks</a></li>
         </ul>
       </div>
     </div>

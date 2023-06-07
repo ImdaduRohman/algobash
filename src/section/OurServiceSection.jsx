@@ -23,7 +23,7 @@ export default function OurServiceSection() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center p-10 gap-4 bg-[#F8F8F8]">
+    <div className="flex flex-col md:flex-row justify-center p-10 gap-4 bg-[#F8F8F8]" id="wwa">
       {
         cardContent.map((item) => (
           <div 
