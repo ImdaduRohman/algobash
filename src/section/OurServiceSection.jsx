@@ -1,3 +1,5 @@
+import { style } from "../style";
+
 export default function OurServiceSection() {
   const cardContent = [
     {
@@ -28,9 +30,9 @@ export default function OurServiceSection() {
             key={item.id}
             className="shadow-lg p-10 "
           >
-            <div className="text-[#029FE4] text-4xl leading-[30px] font-medium mb-3">{item.title}</div>
-            <div className="text-black text-lg leading-[38px] font-normal">{item.subTitle}</div>
-            <div className="text-[#777777] text-sm leading-6 tracking-[0.01]">{item.content}</div>
+            <div className={style.title}>{item.title}</div>
+            <div className={style.subTitle}>{item.subTitle}</div>
+            <div className={style.content}>{item.content}</div>
           </div>
         ))
       }
