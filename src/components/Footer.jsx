@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="text-white text-base leading-[30px]">
         <ul>
-          <li><a href="#wwa">Who We Are</a></li>
+          <li><a href="#ourService">Who We Are</a></li>
           <li><a href="#ourValues">Our Values</a></li>
           <li><a href="#perks">The Perks</a></li>
         </ul>

@@ -23,7 +23,10 @@ export default function OurServiceSection() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center p-10 gap-4 bg-[#F8F8F8]" id="wwa">
+    <div 
+      id="ourService"
+      className="flex flex-col md:flex-row justify-center px-10 py-16 gap-4 bg-[#F8F8F8]"
+    >
       {
         cardContent.map((item) => (
           <div 
