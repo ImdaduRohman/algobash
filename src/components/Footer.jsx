@@ -12,10 +12,18 @@ export default function Footer() {
       address: 'Jl. Pramuka No 54 Kel. Gambar Jati Kec. Cirebus, Kota Bandung, Jawa Barat'
     }
   ];
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+};
 
   return (
     <div className="bg-[#07477A] p-10 flex flex-col md:flex-row justify-around items-start md:items-center gap-8">
-      <img src="/footer-logo.svg" alt="logo" />
+      <button onClick={() => goToTop()}>
+        <img src="/footer-logo.svg" alt="logo" />
+      </button>
       <div className="bg-white p-6">
         <div>
           <select 
